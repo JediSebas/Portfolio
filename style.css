@@ -1,0 +1,150 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  height: auto;
+  width: auto;
+  background-color: #333;
+  color: white;
+  font-family: 'Open Sans'
+}
+
+header{
+  height: 60vh;
+  width: auto;
+  background: url(landscape.jpg) no-repeat center; /* zrodlo: https://www.canon.pl/media/PCA%20Exercise%20-%20Landscape%20Photography%20exercise-landscape-photos-opener-05_1200%20x%20400_tcm125-1444470.jpg*/
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+#jedi{
+  font-size: 90px;
+  padding-top: 20px;
+  color: black;
+}
+
+#andro{
+  font-size: 30px;
+  color: black;
+}
+
+section{
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.skills{
+  width: 25%;
+  height: 40vh;
+  box-sizing: border-box;
+  float: left;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+img{
+  width: auto;
+  height: 70%;
+  position: relative;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+.star{
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: -10px;
+}
+
+.skills:hover{
+  background-color: pink;
+}
+
+#projects{
+  width: 100%;
+  margin: 100px auto;
+}
+
+.project{
+  margin: 0;
+  padding: 0;
+  width: 33%;
+  height: 60vh;
+  float: left;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.project:hover{
+  background-color: #666600;
+}
+
+.project img{
+  width: 90%;
+  height: 75%;
+  margin: 0;
+}
+
+.project a{
+  font-size: 30px;
+  text-decoration: none;
+  color: pink;
+}
+
+@media (max-width: 1000px){
+  .skills{
+    width: 50%;
+    height: 40vh;
+  }
+
+  .project{
+    width: 50%;
+  }
+}
+
+@media (max-width: 700px){
+  .skills{
+    width: 100%;
+    height: 60vh;
+  }
+
+  .project{
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px){
+  img{
+    width: 100%;
+    height: 70%;
+  }
+
+  .project img{
+    height: 50%;
+  }
+
+  .project a{
+    font-size: 20px;
+  }
+}
+
+#end{
+  clear: both;
+}
+
+footer{
+  text-align: center;
+  padding: 30px 0 30px 0;
+  font-size: 20px;
+}
