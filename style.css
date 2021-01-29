@@ -40,7 +40,7 @@ article p{
 header{
   height: 60vh;
   width: auto;
-  background: url(landscape.jpg) no-repeat center; /* zrodlo: https://www.canon.pl/media/PCA%20Exercise%20-%20Landscape%20Photography%20exercise-landscape-photos-opener-05_1200%20x%20400_tcm125-1444470.jpg*/
+  background: url(pic/landscape.jpg) no-repeat center; /* zrodlo: https://www.canon.pl/media/PCA%20Exercise%20-%20Landscape%20Photography%20exercise-landscape-photos-opener-05_1200%20x%20400_tcm125-1444470.jpg*/
   background-size: cover;
   position: relative;
   text-align: center;
@@ -149,6 +149,12 @@ footer{
   font-size: 20px;
 }
 
+#kont{
+  margin-bottom: 10px;
+  color: white;
+  text-decoration: none;
+}
+
 img.arrow{
   width: 10%;
   height: 10%;
@@ -182,6 +188,11 @@ img.arrow{
 }
 
 @media (max-width: 700px){
+  section{
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
   .skills{
     width: 100%;
     height: 60vh;
@@ -203,6 +214,10 @@ img.arrow{
 }
 
 @media (max-width: 500px){
+  #description{
+    padding-right: 0;
+  }
+
   img{
     width: 100%;
     height: 70%;
@@ -219,10 +234,6 @@ img.arrow{
 
   .project a{
     font-size: 20px;
-  }
-
-  header{
-    width: 100vw;
   }
 
   #jedi{
