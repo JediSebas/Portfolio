@@ -1,0 +1,472 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  color: white;
+  font-family: 'Open Sans'
+}
+
+nav {
+  height: 10vh;
+}
+
+#empty {
+  display: none;
+}
+
+#empty img {
+  height: 100%;
+  width: auto;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  float: left;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.45s ease;
+}
+
+a:hover {
+  background-color: #333;
+}
+
+header {
+  width: 100%;
+  height: 90vh;
+  margin: auto;
+  text-align: center;
+  background-image: url(../images/background.jpg);
+  background-size: 100%;
+}
+
+header h1 {
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+}
+
+main {
+  width: 75%;
+  margin: auto;
+}
+
+main h1 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 50px;
+}
+
+main h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+
+main h3 {
+  margin-bottom: 20px;
+}
+
+article {
+  margin-top: 50px;
+  font-size: 26px;
+}
+
+section p {
+  width: 80%;
+  text-align: justify;
+}
+
+img {
+  width: 100%;
+}
+
+#skills img {
+  transition: all 0.6s ease-in-out;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+#skills img:hover {
+  background-color: rgb(109, 11, 109);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  font-size: 26px;
+  text-align: center;
+  background-color: rgb(27, 5, 27);
+}
+
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background: url(../images/arrow.png) no-repeat;
+  background-size: cover;
+  color: white;
+  cursor: pointer;
+  padding: 40px;
+  border-radius: 50px;
+  font-size: 30px;
+}
+
+#scrollBtn:hover {
+  background-color: rgba(87, 16, 168, 0.521);
+}
+
+ul {
+  width: 100%;
+  height: 100%;
+}
+
+li {
+  display: block;
+  float: left;
+  width: 33.3%;
+  height: 100%;
+}
+
+.width-10 {
+  width: 10%;
+}
+
+.width-20 {
+  width: 20%;
+}
+
+.width-40 {
+  width: 40%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.width-60 {
+  width: 60%;
+}
+
+.width-80 {
+  width: 80%;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.set-float {
+  float: left;
+}
+
+.clear-float {
+  clear: both;
+}
+
+/* Extra extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 400px) {
+  .width-20 {
+    width: 42.8%;
+  }
+
+  section p {
+    font-size: 20px;
+    padding-bottom: 38px;
+  }
+
+  section p,
+  .width-40,
+  .width-50,
+  .width-60,
+  li {
+    width: 100%;
+  }
+
+  .set-float {
+    clear: both;
+  }
+
+  #empty {
+    display: block;
+  }
+
+  #menu ul {
+    display: none;
+    z-index: 50;
+    position: relative;
+  }
+
+  #menu ul li {
+    background-color: #000;
+    opacity: 1;
+  }
+}
+
+/* Extra small devices (phones, 400px and up) */
+@media only screen and (min-width: 400px) {
+  .width-20 {
+    width: 44.8%;
+  }
+
+  section p {
+    font-size: 20px;
+    padding-bottom: 38px;
+  }
+
+  section p,
+  .width-40,
+  .width-50,
+  .width-60,
+  li {
+    width: 100%;
+  }
+
+  .set-float {
+    clear: both;
+  }
+
+  #empty {
+    display: block;
+  }
+
+  #menu ul {
+    display: none;
+    z-index: 50;
+    position: relative;
+  }
+
+  #menu ul li {
+    background-color: #000;
+    opacity: 1;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  li {
+    width: 33.3%;
+  }
+
+  .width-20 {
+    width: 28.2%;
+  }
+
+  #menu ul {
+    display: block;
+  }
+
+  #menu-icon {
+    display: none;
+  }
+
+  #empty {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #menu-icon {
+    display: none;
+  }
+
+  #empty {
+    display: none;
+  }
+
+  .width-20 {
+    width: 20%;
+  }
+
+  .width-40 {
+    width: 40%;
+  }
+
+  .width-60 {
+    width: 60%;
+  }
+
+  section p {
+    width: 90%;
+    font-size: 26px;
+  }
+
+  .set-float {
+    clear: none;
+    float: left;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  nav {
+    height: 10vh;
+  }
+
+  #empty {
+    display: block;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    float: left;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.45s ease;
+  }
+
+  a:hover {
+    background-color: #333;
+  }
+
+  header {
+    width: 100%;
+    height: 90vh;
+    margin: auto;
+    text-align: center;
+    background-image: url(../images/background.jpg);
+    background-size: 100%;
+  }
+
+  header h1 {
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+  }
+
+  main {
+    width: 75%;
+    margin: auto;
+  }
+
+  main h1 {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  main h2 {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  article {
+    margin-top: 50px;
+    font-size: 26px;
+  }
+
+  section p {
+    width: 80%;
+    text-align: justify;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  #skills img {
+    transition: all 0.6s ease-in-out;
+    padding: 2%;
+    border-radius: 20px;
+  }
+
+  #skills img:hover {
+    background-color: rgb(109, 11, 109);
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    font-size: 26px;
+    text-align: center;
+    background-color: rgb(27, 5, 27);
+  }
+
+  #scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background: url(../images/arrow.png) no-repeat;
+    background-size: cover;
+    color: white;
+    cursor: pointer;
+    padding: 50px;
+    border-radius: 50px;
+    font-size: 30px;
+  }
+
+  #menu-icon {
+    display: none;
+  }
+
+  .width-20 {
+    width: 20%;
+  }
+
+  .width-40 {
+    width: 40%;
+  }
+
+  .width-50 {
+    width: 50%;
+  }
+
+  .width-60 {
+    width: 60%;
+  }
+
+  .height-100 {
+    height: 100%;
+  }
+
+  .set-float {
+    float: left;
+  }
+
+  .clear-float {
+    clear: both;
+  }
+
+}

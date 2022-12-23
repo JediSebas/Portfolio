@@ -1,0 +1,98 @@
+.set-float {
+    clear: none;
+}
+
+main a:hover {
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 400px) {
+    .width-33 p a {
+        font-size: 18px;
+    }
+
+    .width-33 {
+        width: 45%;
+        padding: 2.5%;
+        margin: 30px 0;
+    }
+
+    #wider {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #wider div {
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .width-33 p a {
+        font-size: 24px;
+    }
+
+    .width-33 {
+        width: 45%;
+        padding: 2.5%;
+        margin: 30px 0;
+    }
+
+    #wider {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #wider div {
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .width-33 p a {
+        font-size: 28px;
+    }    
+
+    .width-33 {
+        margin: 40px 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .width-33 p a {
+        font-size: 20px;
+    }
+
+    .width-33 {
+        width: 30%;
+        padding: 1.5%;
+        margin: 70px 0;
+    }
+
+    #wider {
+        display: block;
+        width: 30%;
+        padding: 1.5%;
+        margin: 70px 0;
+    }
+
+    #wider div {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .width-33 p a {
+        font-size: 25px;
+    }
+}
