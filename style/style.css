@@ -47,7 +47,7 @@ header {
   height: 90vh;
   margin: auto;
   text-align: center;
-  background-image: url(../images/background.jpg);
+  background-image: url(../images/background.webp);
   background-size: 100%;
 }
 
@@ -123,7 +123,7 @@ footer {
   z-index: 99;
   border: none;
   outline: none;
-  background: url(../images/arrow.png) no-repeat;
+  background: url(../images/arrow.webp) no-repeat;
   background-size: cover;
   color: white;
   cursor: pointer;
@@ -356,7 +356,7 @@ li {
     height: 90vh;
     margin: auto;
     text-align: center;
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/background.webp);
     background-size: 100%;
   }
 
@@ -428,7 +428,7 @@ li {
     z-index: 99;
     border: none;
     outline: none;
-    background: url(../images/arrow.png) no-repeat;
+    background: url(../images/arrow.webp) no-repeat;
     background-size: cover;
     color: white;
     cursor: pointer;
