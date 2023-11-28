@@ -28,3 +28,10 @@ $(document).ready(function () {
         $('nav ul').toggle('visible');
     });
 });
+
+function insertAge() {
+    const birth = 2004;
+    const currentYear = new Date().getFullYear();
+
+    document.getElementById('age').innerHTML = currentYear - birth;
+}
